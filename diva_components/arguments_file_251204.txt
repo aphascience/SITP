@@ -1,0 +1,33 @@
+### This file contains the global variable used by the DIVA test python script
+### an example to call the script is:
+### python diva_test_s3_251204.py /home/jahcubtrew/mnt/Salmonella/CR2000F/Javi_diva_test_new/arguments_file_251204.txt /home/jahcubtrew/test_dir/010126_APHA_NB552234_0535_SummaryTable_plusLIMS_fin.csv /home/jahcubtrew/reads_dir/
+
+
+### Calier specific calier list of SNPS file
+snps_file='/root/SalmoType/diva_components/calier_specific_snps.csv'
+
+### Calier specific calier insertions fasta file
+deletion_fasta_file='/root/SalmoType/diva_components/calier_specific_insertions_reduced.fasta'
+
+### Calier reference sequence fasta file
+calier_ref='/root/SalmoType/diva_components/callier__vaccine_reference.fna'
+
+### s3 bucket where the isolates fastq files are placed
+s3_bucket_collection='n/a'
+
+### threhold for DIVA SNPs positive
+snps_th=95.0
+
+### threhold for DIVA insertions positive
+insertions_th=90.0
+
+### threhold for DIVA SNPs check result flagging
+snps_check_th=20.0
+
+### threhold for DIVA insertions check result flagging
+insertions_check_th=20.0
+
+### threhold for DIVA SNPs availability check result flagging
+snps_availability_th=40
+
+
