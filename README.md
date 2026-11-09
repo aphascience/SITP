@@ -11,7 +11,7 @@ To build the image for the Nextflow salmonella serotyping pipeline:
 First clone the rpository into a local directory:
 
 ```
-$ git clone https://github.com/aphascience/SalmoType.git
+$ git clone https://github.com/aphascience/SITP.git
 
 ```
 And then run the following commands while in the repository:
