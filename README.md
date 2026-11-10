@@ -17,15 +17,18 @@ $ git clone https://github.com/aphascience/SITP.git
 And then run the following commands while in the repository:
 
 ```
+$ cd SITP/
+
 $ sudo docker build ./ -t salmotype
 
+$ mkdir ~/wgs-reads
 ```
 
 # Running the pipeline
 
 To run the pipeline on a batch of samples, the raw `.fastq.gz` files must be stored in `~/wgs-reads/<runID>`.  Each read-pair sample is represented by a pair of files named `*_R1.fastq.gz` and `*_R2.fastq.gz`. For example, to batch two samples named `salmonella_a` and `salmonella_b`, a `~/wgs-reads/<runID>` directory containing four files is required: `salmonella_a_R1.fastq.gz`, `salmonella_a_R2.fastq.gz`,  `salmonella_b_R1.fastq.gz` and `salmonella_b_R2.fastq.gz`.
 
-The default image name that process_plate.py will try to run with docker is "SalmoType". If you change this on '-t' parameter on the build command above, appropriately change the "default_image" in salmo_typeConfig_procesPlate.yaml.
+The default image name that process_plate.py will try to run with docker is "salmoType". If you change this on '-t' parameter on the build command above, appropriately change the "default_image" in salmo_typeConfig_procesPlate.yaml.
 
 Then, to run the pipeline from the terminal call:
 ```
